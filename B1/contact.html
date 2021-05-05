@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LIÊN HỆ</title>
+  </head>
+  <body>
+    <style>
+      input.measure {
+        display: block;
+        width: 60%;
+        height: calc(1.5em + 0.75rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+    </style>
+    <style>
+      button.btn {
+        display: block;
+        width: 20%;
+        height: calc(1.5em + 0.75rem + 2px);
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #495057;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+      }
+    </style>
+    <div class="header" style="margin-left: 800px">
+      <a href="https://vinid.net">
+        <img
+          src="https://vinid.net/wp-content/themes/vinid/assets/img/logo.png"
+          title="VinID"
+        />
+      </a>
+      <a href="index.html">TRANG CHỦ</a>
+      <a href="about.html">VỀ VINID</a>
+    </div>
+    <div style="margin-top: 100px; margin-left: 900px">
+      <img src="img/img_avatar2.png" alt="Avatar" style="width: 200px" /><br />
+    </div>
+    <div style="margin-left: 700px; margin-top: 40px">
+      <div style="font-size: large">
+        <label for="name">Họ và tên*</label>
+      </div>
+
+      <input
+        id="name"
+        class="measure"
+        type="text"
+        maxlength="80"
+        size="20"
+        placeholder="Enter username"
+        name="uname"
+        autofocus
+        required
+      /><br />
+
+      <div style="margin-top: 5px"><label for="ema">Email*</label><br /></div>
+      <div style="margin-top: 5px">
+        <input
+          type="email"
+          placeholder="Enter email"
+          name="ema"
+          required
+          class="measure"
+        /><br />
+      </div>
+      <div style="margin-top: 5px">
+        <label for="sdt">Số điện thoại*</label><br />
+      </div>
+      <div style="margin-top: 5px">
+        <input
+          type="password"
+          placeholder="Enter số điện thoại"
+          name="sdt"
+          required
+          class="measure"
+        /><br />
+      </div>
+      <div style="margin-top: 5px">
+        <label for="tdt">Tiêu đề thư</label><br />
+      </div>
+      <div style="margin-top: 5px">
+        <input
+          type="text"
+          placeholder="Enter tiêu đề thư"
+          name="tdt"
+          required
+          class="measure"
+        /><br />
+      </div>
+      <div style="margin-top: 5px"><label for="nd">Nội dung*</label><br /></div>
+      <div style="margin-top: 5px">
+        <input
+          type="text"
+          placeholder="Enter nội dung"
+          name="nd"
+          required
+          class="measure"
+        /><br />
+      </div>
+      <div style="margin-top: 5px">
+        <label for="nd">Bạn muốn nhận được hỗ trợ</label><br />
+      </div>
+      <div style="margin-top: 5px">
+        <input list="hotro" class="measure" placeholder="Chọn loại hỗ trợ" />
+
+        <datalist id="hotro">
+          <option value="Khóa/Kích hoạt tài khoản khẩn cấp"></option>
+          <option value="Kiểm tra/Thay đổi thông tin tài khoản"></option>
+          <option value="Kiểm tra thông tin Đơn hàng/Giao dịch"></option>
+          <option value="Bảo hiểm sự cố"></option>
+          <option value="Góp í"></option>
+        </datalist>
+      </div>
+    </div>
+    <div style="margin-left: 1000px; margin-top: 40px">
+      <button
+        type="submit"
+        formaction="https://www.google.com/maps"
+        class="btn"
+      >
+        Submit</button
+      ><br />
+    </div>
+    <div style="margin-left: 600px; font-size: 20px; margin-top: 10px">
+      <label for="map"
+        >Liên hệ chúng tôi: Địa chỉ số 2 hùng vương, hà nội</label
+      >
+    </div>
+    <div
+      id="map"
+      style="width: 500px; height: 500px; margin-left: 600px; margin-top: 10px"
+    >
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!
+      1d3723.8977453149246!2d105.83245751424809!3d21.036777085994046!
+      2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+      1s0x3135aba15ec15d17%3A0x620e85c2cfe14d4c!2zTMSDbmcgSOG7kyBDaMOtIE1pbmg!
+      5e0!3m2!1svi!2sus!4v1501056274257"
+        width="800"
+        height="550"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </body>
+</html>
